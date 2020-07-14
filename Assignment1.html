@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <h2>Assignment 1</h2>
+    </head>
+    <body>
+    <h3>Quetion no 1</h3>
+        <script>
+            var d=new Date();
+             var dayl=['Sunday','Monday','Tuesday','Wednusday','Thusrday','Friday','Saturday'];
+             var d1=d.getDay();
+             document.write("Today is : ",dayl[d1],"<br>");
+             var hour = d.getHours();
+            var minute = d.getMinutes();
+            var second = d.getSeconds();
+            var prepand = (hour >= 12)? " PM ":" AM ";
+             hour = (hour >= 12)? hour - 12: hour;
+             if (hour===0 && prepand===' PM ') 
+            { 
+                if (minute===0 && second===0)
+                { 
+                    hour=12;
+                     prepand=' Noon';
+                } 
+                else
+                { 
+                    hour=12;
+                     prepand=' PM';
+                 } 
+             } 
+             if (hour===0 && prepand===' AM ') 
+             { 
+                if (minute===0 && second===0)
+                { 
+                     hour=12;
+                    prepand=' Midnight';
+                } 
+                 else
+                 { 
+                    hour=12;
+                    prepand=' AM';
+                 } 
+                 } 
+                document.write("Current Time : "+hour + prepand + " : " + minute + " : " + second);
+        </script>
+        <h3>Quetion no 2</h3>
+        <script>
+            document.write("print content of current window ")
+            window.print();
+        </script>
+        <h3>Quetion no 3</h3>
+        <script>
+            document.write("Display date in following format <br>")
+            document.write("dd-mm-yyyy<br>")
+            document.write("dd/mm/yyyy<br>")
+            var date=d.getDate();
+            var month=d.getMonth();
+            var year=d.getFullYear();
+            document.write("Date :",date,"/",month,"/",year,"<br>")
+            document.write("Date :",date,"-",month,"-",year)
+
+        </script>
+    </body>
+</html>
