@@ -1,0 +1,12 @@
+var num=prompt("Enter a positive no series seprated by space : ");
+var numarr=num.split(" ");
+var numarray=[];
+ for( i=0;i<numarr.length;i++)
+ {
+     numarray[i]=parseInt(numarr[i]);
+ }
+ console.log("Array of numbers :",numarray);
+let odd=numarray.filter(el=>el%2!=0);
+ console.log("Odd no. are ",odd);
+ let oddcube=odd.map(el=>el**3);
+ console.log("Cube of odd numbers are : ",oddcube);
