@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="time">Day</h1>
+    <script>
+        name = prompt("Enter user name : ");
+        document.write(`<h2>Welcome <strong>${name}<strong> to let's Upgrade Family</h2>`);
+
+        const ctime = document.getElementById('time');
+
+
+        function clock() {
+            let date = new Date();
+            let time = date.toLocaleTimeString();
+            ctime.innerText = time;
+        }
+        setInterval(clock, 1000);
+
+    </script>
+    <button class= "dark-mode" onclick="myFunction()">Swich to dark mode </button>
+    <script>
+        
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+
+</html>
