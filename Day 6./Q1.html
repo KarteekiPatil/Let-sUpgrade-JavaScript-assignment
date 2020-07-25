@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Background Color change after 5 seconds</h2>
+    <div class="bg"></div>
+    
+    <script>
+        
+        var bg = document.querySelector('.bg');
+        var colours = ["#CCCDFF", "#BAC7E8", "#D9EEFF", "#BADFE8","red","pink","yellow"];
+        var i = 0; 
+
+        function change() {
+            
+            if (i >= colours.length) { clearInterval(timer); }
+
+            
+            bg.style.backgroundColor = colours[i++];
+        }
+        var timer = setInterval(change, 5000); 
+    </script>
+</body>
+
+</html>
