@@ -1,0 +1,29 @@
+h1{
+    text-align: center; 
+    color: #444444; 
+   font-weight: 100; 
+   font-size: 40px; 
+   margin: 40px 0px 20px; 
+
+}
+body{ 
+    text-align: center; 
+    background: #00ECB9; 
+  font-family: sans-serif; 
+  font-weight: 100; 
+  font-size: large;
+  font-style: italic;
+} 
+.quoteDisplay{
+    
+    color: rgb(208, 140, 210);
+
+}
+button{
+    background-color:#123466;
+    border:1;
+    padding:15px 32px;
+    display:inline-block;
+    color: deeppink;
+    font-style: italic;
+}
