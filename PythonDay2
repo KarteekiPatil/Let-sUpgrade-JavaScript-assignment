@@ -1,0 +1,13 @@
+#find time complexity of afollowing code
+
+for(i=1;i<=n;i*2)
+  for(j=1;j<=i;j++)
+    print("hello)
+    
+    
+  #when i=1 it will run 1 time
+  #when i=2 it will run 2 time & so on.
+  #Total no of times count++ will run is 
+  
+  #0+1+2+4.....(n-1)=(n*(n-1))/2 so,
+  #time complexity will be O(n^2)
